@@ -1,0 +1,1253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+<title>Seconds Out — Boxing Round Timer</title>
+<meta name="theme-color" content="#0a0b0c">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Seconds Out">
+<link rel="manifest" href="data:application/manifest+json;base64,eyJuYW1lIjogIlNlY29uZHMgT3V0IFx1MjAxNCBCb3hpbmcgUm91bmQgVGltZXIiLCAic2hvcnRfbmFtZSI6ICJTZWNvbmRzIE91dCIsICJzdGFydF91cmwiOiAiLiIsICJkaXNwbGF5IjogInN0YW5kYWxvbmUiLCAiYmFja2dyb3VuZF9jb2xvciI6ICIjMGEwYjBjIiwgInRoZW1lX2NvbG9yIjogIiMwYTBiMGMiLCAiaWNvbnMiOiBbeyJzcmMiOiAiZGF0YTppbWFnZS9wbmc7YmFzZTY0LGlWQk9SdzBLR2dvQUFBQU5TVWhFVWdBQUFMUUFBQUMwQ0FJQUFBQ3lyNUZsQUFBRTRFbEVRVlI0bk8zZFFYTGJPaEJGVVRqbGtaVnRlUDhMeWphU2VRYW9VcmxrUHhHaW9PN1h3RDNUWHo4aW0xZE55azdzdDQvTDd3Yjg1RmYyQWNBWGNVQWlEa2pFQVlrNElCRUhKT0tBUkJ5UWlBTVNjVUFpRGtqRUFZazRJQkVISk9LQVJCeVFpQU1TY1VBaURrakVBWWs0SUJFSEpPS0FSQnlRaUFQU2UvWUJSUHYzNSsvcC8vZnl1ZGUvRG56YjZwOURQbFBHMVQ2SmJIUmJtVkxHeEQvSDN5NXh6TDJpbS9TeFN4dzRnVGdnRVFjazRvQkVISkNJQXhKeFFDSU9TTVFCaVRnZ0VRY2s0b0JFSEdkczhsMzdsZjgrUjh6M1RoY09aY0U0c3I2ZnZsNGxTOFhoOE5jc1ZrcGtoVGdjbXZodWdVcHF4K0daeFZlbEV5bjhhY1cvakZia0lKV1NtNlBpeEN1dWtHSnhUTXhpL0dxbHZLaURTbkU4ZVpGbVhSaVR3d2hRSm81emwrVFZWOEx6cUdZcEVJZi9CZkEvd25QYzQzaDA3cmtUcjNXMGg2emplR2pXUG9NdWV0amYrY1l4UG1MUCtWWS8vbWI3UmJBRkpwdnlVWGt1eDgweE9DemJMRzdVUFIyN3pWRjNsTXJnb1JydUQ2ODQxaXVqSzlxSDBXMWxaRFRsc3JoUjZ4eGROa2V0cVowMmNnbysrOE5pYytTV29WNDkvaFZqWG4yY3krYTR6MkZTRTFVNW5mdzREdDlHVlViNWtNT1Rjcmk1Sk1leFp4bWRmeCtaY2V4Y1JtZmVSLzV0QmJiUzRtQnRkTTdMdzNSemJGSkdaM3V5T1hIY2Z6ZllEdXQxN3A5eTF2SklpQ1A5SWJ5aWxLSFozVlkyWEJ1ZDRZbEh4OEVONVE2M200dmQ1b0FQb3pnMlh4dWQxUkJDNCtCUjlFbkJBM1RaSEZidm1GdytvNGlMZzdVeFJlUVlYVFlIREZuRTRiTklUWmdNSkNnTzdpa1RoUTB6ZjNPWXZFdmNPSXdsUHc3WUlnNUlFWEh3d0RGZHpFaVRONGZEbmRWVytuQzRyVUFpRGtqRUFlbmxjZkEwK2lJQmc4M2NIT2tQWFA1eVIvU2UrTnJwN3IvNStuL2R1V0NlT1NEdEc4ZmdQWHZuWjZaTmJ5c1BYZkxuK3loNmI5cDNjK0FRY1VBaURrakVBWWs0SUcwYVI5R1BEOEUyamFQUng0Qk52ODR4YnVlR3RvNmpYL2o0bjJCY2hmV1Btb3p4WXdRbVplU082T1diNC9MNTJ5U0NPMHhTZUVqQU1lLzdRSXBEeEFHSk9DQzUvMkQ4bmFVUEp5S09pbzk3NW1KR3ltMEZFbkZBeW84ai9jN3F5V0VzUVhIdzJERlIyRER6TjBmemVKZFlNUm1JUlJ6d0ZCY0hkNVlwSXNmb3NqbE1GcWtEbjFHRXhzSHllRkx3QUYwMlIzTjZ4eVN5R29KUkhIQVRIWWZiTHlPeTR2WnJyT3cyeDdaOUdKNTRRaHc4bHA2UU1yU2N6Y0hONVliYkRhV3p1NjEwVy9WaGU3SnBjVGovRHZkSWg2ZVplQmMyM1J4d1lQMmpKcGRmSHM1cm82VnZqcDM3TUMranBjZlJkdTNEdjR6bUVNZUl4ZnFvY2pvV2NZeThTNm9NOU5ESWlUaXNqV1lTUjl1bWowSmx0TmJlUGk0dWg5S0dMNy9QK01aVlBEV1h6ZEVOanFiY0NxbFlSbk9MbzYzWVI5RXltdHR0NVdyODJodk85S3I2V2RodGptNThXTFlycEhvWnpYWnpkQTlkZUo4UkZ6M3M3NnpqYUk4dmh0eFoxenJhUSs1eHRMTTNqc2k1K3gvaE9RWGk2RHd2Z09kUnpWSW1qdmIwcytlc1MySnlHQUVxeGRHbWZqWkorVUJVcUl4V0xvN085dVBySGJXeTZFckcwVlZKcEdJV25la1h3VWFVR0hxSmcxUUtiNDRyenhWU09vdHVoVGl1SENwWm9JbXJwZUxvc2hKWktZdHV3VGl1WWlwWnI0bXJsZVA0YW00b0N3ZngxUzV4M0Zqc08yUXZzbWtjR0ZINDZ4eDROZUtBUkJ5UWlBTVNjVUFpRGtqRUFZazRJQkVISk9LQVJCeVFpQU1TY1VBaURrakVBWWs0SUJFSEpPS0FSQnlRaUFNU2NVQWlEa2ovQWVpQXBxaUhLK2JKQUFBQUFFbEZUa1N1UW1DQyIsICJzaXplcyI6ICIxODB4MTgwIiwgInR5cGUiOiAiaW1hZ2UvcG5nIn0sIHsic3JjIjogImRhdGE6aW1hZ2UvcG5nO2Jhc2U2NCxpVkJPUncwS0dnb0FBQUFOU1VoRVVnQUFBZ0FBQUFJQUNBSUFBQUI3R2tPdEFBQVBBRWxFUVZSNG5PM2RTM1lVTVJLRzBhSVBJOHcyMlArQzJBYk1lK0J6M0xRZjljaEtTYUg0NzExQlVTbkZKNlVOZlB2eDh2TUNRSjcvclA0QUFLd2hBQUNoQkFBZ2xBQUFoQklBZ0ZBQ0FCQktBQUJDQ1FCQUtBRUFDQ1VBQUtFRUFDQ1VBQUNFRWdDQVVBSUFFRW9BQUVJSkFFQW9BUUFJSlFBQW9RUUFJSlFBQUlRU0FJQlFBZ0FRU2dBQVFna0FRQ2dCQUFnbEFBQ2hCQUFnbEFBQWhCSUFnRkFDQUJCS0FBQkNDUUJBS0FFQUNDVUFBS0VFQUNDVUFBQ0VFZ0NBVUFJQUVFb0FBRUlKQUVBb0FRQUlKUUFBb1FRQUlKUUFBSVFTQUlCUUFnQVFTZ0FBUWdrQVFDZ0JBQWdsQUFDaEJBQWdsQUFBaEJJQWdGQUNBQkJLQUFCQ0NRQkFLQUVBQ0NVQUFLRUVBQ0NVQUFDRUVnQ0FVQUlBRUVvQUFFSUpBRUFvQVFBSUpRQUFvUVFBSUpRQUFJUVNBSUJRQWdBUVNnQUFRZ2tBUUNnQkFBajFmZlVIZ0NQKy92NnoraU84OS9McjUrcVBBSS81OXVQRnFtVWJCZWYrUjByQUxnU0FQV3d4K3Y4bEE5VG5ad0JzWUx2cGY5bnpNNU5HQUtodTMwbTY3eWNuaEFCUTJ1NHpkUGZQVDI4Q1FGMDlwbWVQUHdVdENRQkZkWnFibmY0c2RDSUFBS0VFZ0lyNkhabjcvWWxvUUFBQVFna0FRQ2dCb0p5dWIwdTYvcm5ZbHdBQWhCSUFnRkFDQUJCS0FBQkNDUUJBS0FFQUNDVUFBS0VFQUNDVUFBQ0VFZ0NBVUFJQUVFb0FBRUlKQUVBb0FRQUlKUUFBb1FRQUlKUUFBSVFTQUlCUUFnQVFTZ0FBUWdrQVFDZ0JBQWdsQUFDaEJBQWdsQUFBaEJJQWdGQUNBQkJLQUFCQ0NRQkFLQUVBQ0NVQUFLRUVnSEplZnYxYy9SR0c2UHJuWWw4Q0FCQktBQUJDZmZ2eDRscEtGWDkvLzFuOUVZYnpJb2c2QklERkVvYitWOFNBdFFTQUJaS0gvbGZFZ1BrRWdIbk0vWHNvQWRNSUFNT1orOGNvQWFNSkFLT1krMmRSQWdZUkFFNW03bytqQkp4TEFEaU4wVCtIREhBV0FlQlo1djRxU3NDVEJJRGpqUDRLWklEREJJQWpqUDVxWklBREJJREhHUDJWeVFBUEVRRHVaZlR2UWdhNGt3QndtOUcvSXhuZ0pnSGdHcU4vZHpMQUZRTEE1NHorVG1TQVR3a0E3eG45WGNrQTd3Z0EvMlAwSjVBQjNnZ0FsNHZSbjBjR3VQZy9nYm1ZL3BFOGRDNXVBT0ZNQVZ3RmtnbEFLS09mZjhsQUpxK0FFcG4rdkdOSlpISUR5R0tmYzUyclFCUUJDSkkyL2MrYVpiNDN1aEtBQ0wxSDJLcUI1VnRsZHdMUVg3TTVWWGt3K2FyWml3QTAxMkFrN1R1R2ZQa1VKd0J0YlQxOStzMGRqNE9DQktDblRjZE53cUR4YUtoREFCcmFhOFFrVHhaUGlyVUVvSldOQm9wcDhpOFBqaVVFb0k5ZGhvZ0o4aFZQa01rRW9JbjZzOFBVdUorbnlSd0MwRUh4ZVdGWUhPT3hNcG9BYksvc21EQWd6dUlSTTRnQWJNeGNpT0p4Y3pvQjJGWE5jV0FXak9hNWN5SUIyRkxCS1dBRXpHUUJjQW9CMkUrMXpXL25yMklsOENRQjJFeXBQVy9EVjJCSmNKZ0E3S1RPVnJmUHE3RTJPTUQvQ2J3Tk81d3I2anlVT2d1Vm05d0E5bEJrVTlXWk1uekZVdUYrQXJDQkNsdmFmdDZMTmNNOXZBS3F6azdtZ0FxUHJNTFM1VG8zZ05LV2I2RUtjNFJuV0VKYzRRWlFsNjNMODVZL3hPWExtQ3ZjQUlwYXUyMldUdzFPWjBYeGtSdEFSZllxcDF2N1dOMERhbklES0dmaFZqSDZFMWhndkhFRHFNWG1aTFNGRDlvOW9Cb0JLTVQwWnc0TjROWDMxUitBeFl6K1RLL1AzVGdPNXdaUXhaS3RhUHFIVzdJQVZLY09BU2pCOUdjVkRVZ21BT3VaL3F5bEFiRUVZREhUbndvMElKTy9CN0RTL0ExZzlIT2ROUm5GYndFRkNkeHBwNHl6cU8vdDVkZFBCL01jWGdFdE0zbWJSVTB4bmpGNXFlak5RZ0t3aHVsUFpSb1FRZ0FXTVAycFR3TVNDRUJ6cGorSFdUenRDY0JzTTA4Nk5qQlBtcm1FWEFMbUU0Q3BUSCsyb3dHTkNVQlBwajhuc3B5NkVvQjVwcDF1YkZkT04yMVJ1UVRNSkFDVG1QN3NUZ1A2RVlBWlRIOTYwSUJtQkFBZ2xBQU01L2hQSnk0Qm5RaEFFNlkvMDFoc2JRakFXSE5PTVRZa2s4MVpjaTRCb3duQVFLWS9qV2xBQXdLd045T2ZoU3kvM1FuQUtFNHVjQXBiYVJ3QkdNTExIMEo0RWJRMUFkaVY2VThSbHVLK0JPQjhFMDRydGh5bFRGaVFMZ0VqQ0FCQUtBRTRtZU0vbVZ3Q2RpUUFtekg5S2N2aTNJNEFuTWtKQllheXhjNGxBRHR4d3FJNFMzUXZBbkNhMFdjVFc0c3RqRjZvTGdFbkVnQ0FVQUp3RHNkL2VPTVNzQXNCMklEcHozWXMyaTBJd0FtY1IyQXltKzRVQWxDZGt4U2JzblRyRTRCbk9ZbkFFcmJlOHdTZ05HY290bVlCRnljQVR4bDZCckY1YUdEb01uWUplSklBQUlRU2dPTWMvK0VlTGdGbENRQkFLQUdveVBHZlppenBtZ1RnSUJkUEtNSm1QRXdBeW5GV29pVUx1eUFCT01LSkEwcXhKWThSZ0ZxY2ttak04cTVHQUFCQ0NjRER4bDAyblk5b2I5d2k5eGJvQUFFQUNDVUFqM0g4aHllNUJOUWhBQUNoQkFBZ2xBQTh3UHNmT0lXM1FFVUlBRUFvQVZqUDhaOUFsbjBGQW5BdlYwdllncTE2UHdFQUNDVUFpN2tJRTh2aVgwNEFBRUlKd0YyOFZZU04yTEIzRW9DVlhJRUpad3VzSlFBQW9RVGdOdGRKMkk1dGV3OEJXTWJsRnk0MndsSUNBQkJLQUFCQ0NjQU5nOTRrdXZiQ20wSGJ3WThCYmhJQWdGQUNBQkJLQUFCQ0NjQUNmZ0FBNzlnVVN3akFOWDZJQkZ1emhhOFRBSUJRQWdBUVNnQm04NjRUUG1WcnpDY0FBS0VFNEV0K2ZBUU4yTWhYQ0FCQUtBR1l5bHRPdU1JR21Vd0FBRUlKQUVBb0FRQUlKUUNmODVzRDBJYnQvQlVCQUFnbEFQUDREUWU0eVRhWlNRQUFRZ2tBUUNnQm9LZS92LytjOWFNL1AwS2tLd0dnb2ROSHRnYlFrZ0RRemFCaHJRSDBJd0MwTW5STWF3RE5DQUI5VEJqUUdrQW5BdkFKbXh5YXNhay85WDMxQjBqaHI3ZU1ObTJITnhnbHhWZmp5NitmRGI3a0xiZ0IwSUY1QVFjSUFFQW9BUUFJSlFCc3ovc2ZPRVlBQUVJSkFFQW9BV0J2M3YvQVlRSUFFRW9BQUVJSkFFQW9BUUFJSlFBQW9RUUFJSlFBQUlRU0FJQlFBc0RlaXYvVDlsQ1pBQUNFRWdDQVVBTEE5cndGZ21NRUFDQ1VBQUNFRWdBNjhCWUlEdmkrK2dPaytQdjdqeUUxMU11dm4zUCtid0RQY1RUL3g4TTBiZ0Nmc01PaEdadjZVd0pBSHhNMnVUbENKd0pBSzBNSHRPbFBNd0pBTjRQR3RPbFBQd0pBUTZjUGE5T2ZsdndXRUQyOWp1em5mNS9FNktjeE53QTZlM0o4bS83MDVnWkFjOGV1QWtZL0NRUmdIbjhYYktGL3YvbXZZdURwVk9CdmdjMGtBTVF4Nk9HVm53Rjh6b3lBTm16bnJ3Z0FRQ2dCQUFnbEFBQ2hCR0FxditFQVY5Z2drd2tBUUNnQitKTGZISUFHYk9RckJBQWdsQURNNWkwbmZNcldtRThBQUVJSkFFQW9BYmpHajQ5Z2E3YndkUUt3Z0hlZDhJNU5zWVFBQUlRU0FJQlFBZ0FRU2dCdUdQUkRKRzg4NGMyZzdlQW53RGNKQUVBb0FRQUlKUURMZUFzRUZ4dGhLUUc0elp0RTJJNXRldzhCQUFnbEFDdTUvQkxPRmxoTEFPN2lPZ2tic1dIdkpBQUFvUVJnTVZkZ1lsbjh5d2tBUUNnQnVKZTNpckFGVy9WK0FyQ2VpekNCTFBzS0JBQWdsQUE4WU56VjBtbUlLT01XdlBjL0R4RUFnRkFDQUJCS0FCN2pMUkE4eWZ1Zk9nUUFJSlFBUE13bEFBNXovQzlGQUFCQ0NVQXRMZ0UwWm5sWEl3Qkh1R3hDS2Jia01RSlFqbE1TTFZuWUJRbkFRVTRjVUlUTmVKZ0FWT1NzUkRPV2RFMENBQkJLQUk0YmV2RjBZcUtOb1l2Wis1OW5DQUJBS0FGNGlrc0FYT2Y0WDVrQWxLWUJiTTBDTGs0QW51VU1Ba3ZZZXM4VGdPcWNvZGlVcFZ1ZkFKekFTUVFtcytsT0lRQWJjSkppT3hidEZnVGdIS1BQSTdZVEd4bTlYQjMvenlJQUFLRUU0RFF1QVhCeC9OK0tBT3hFQXlqT0V0MkxBSnpKMlFTR3NzWE9KUUNiY2NLaUxJdHpPd0p3c2drbkZOdU1naVlzUzhmLzB3a0FRQ2dCT0o5TEFHa2MvemNsQUx2U0FJcXdGUGNsQUVQTU9hM1llQ3czWnhFNi9nOGlBS05Zc25BS1cya2NBZGliU3dBTFdYNjdFNENCdkFpaU1TOS9HaENBc1RTQWxrei9IZ1NnQ1ExZ0dvdXREUUVZYnRvcHhyWmtnbW5MelBGL0FnRUFDQ1VBTTdnRTBJUGpmek1DTUlrR3NEdlR2eDhCbUVjRDJKZnAzNUlBOUtRQm5NaHk2a29BcHBwNXVyRnBPY1hNaGVUNFA1a0F6S1lCYk1UMDcwMEFtdE1BRHJONDJoT0FCU2FmZEd4akRwaThiQnovbHhDQU5UU0F5a3ovRUFLd2pBWlFrK21mUXdDQ2FBQTNXU1JSdnYxNGtkK1ZsdXczWnk0K3NoUUR1UUVzdG1RRE9PWHhqdW1mU1FEVzB3RFdNdjFqQ1VBSkdzQXFwbjh5QWFoQ0E1alA5QS8zZmZVSFlMSFhFV0JQcHRGK0xtNEFwU3ljd3NaQmxJV1AyMUdqRkFHb1JRTVl6ZlRuamI4SFVOSGFXV3lYZG1WZDhZNGJRRVZydDRxclFFdW1QeCs1QWRTMWZCRGJ0RDFZU0h6RkRhQ3U1ZHRtK2VEZ2Vjc2Y0dkpsekJWdUFOVXQzOEFYZTNoUFZnNDN1UUZVVjJFTFZSZ2xQS1RDSTZ1d2RMbk9EV0FQRmZienhaYmVnYVhDL1FSZ0cwVTI5c1hlcnNvSzRWRmVBVzJqenFhcU0yaDRVK2VoMUZtbzNPUUdzSms2Ky94aXE5ZGdTWENZQU95bjFJYS8yUFByV0FrOFNRQzJWRzNuWDJ6K3VTd0FUaUVBdXlvNEFpNm13SGllT3ljU2dJM1ZuQVVYNDJBTWo1dlRDY0QyeklYMlBHSUdFWUFPeWc2SVY4YkVNUjRyb3dsQUU4V0h4Y1c4ZUlTbnlSd0MwRWY5cWZISzdQaUtKOGhrQXRES0xoUGtZb2o4UHcrT0pRU2dvWTJteVNWN29IaFNyQ1VBUGUwMVdkNGtqQmlQaGpvRW9LMU5CODJyZnVQRzQ2QWdBV2h1NjduemF0L3A0OHVuT0FIb3I4RVkrbGZsa2VTclppOENFS0haWUhwbjFaenlyYkk3QVFqU2UyQjlkTllJODczUmxRQmtTWnRsUE1yMGp5SUFpV1NBajR6K1FQNVA0RVMyT3U5WUVwbmNBS0s1Q21EMEp4TUFaQ0NVMFk5WFFCZ0VpVHgwTG00QS9NdFZJSUhSenhzQjREMFo2TXJvNXgwQjRITXkwSW5SejZjRWdHdGtZSGRHUDFjSUFMZkp3STZNZm00U0FPNGxBN3N3K3JtVEFQQVlHYWpNNk9jaEFzQVJNbENOMGM4QkFzQnhNbENCMGM5aEFzQ3paR0FWbzU4bkNRQ25VWUk1ekgzT0lnQ2NUQWJHTWZvNWx3QXdpaEtjeGR4bkVBRmdPQ1U0eHR4bk5BRmdIaVc0aDduUE5BTEFBa3J3a2JuUGZBTEFZc2t4TVBSWlN3QW9KQ0VHaGo1MUNBQkZkWXFCb1U5TkFzQTJka21DY2M4dUJJQ05WVWlDY2MrK0JJQ2V6bTJES1U5TEFnQVE2aityUHdBQWF3Z0FRQ2dCQUFnbEFBQ2hCQUFnbEFBQWhCSUFnRkFDQUJCS0FBQkNDUUJBS0FFQUNDVUFBS0VFQUNDVUFBQ0VFZ0NBVUFJQUVFb0FBRUlKQUVBb0FRQUlKUUFBb1FRQUlKUUFBSVFTQUlCUUFnQVFTZ0FBUWdrQVFDZ0JBQWdsQUFDaEJBQWdsQUFBaEJJQWdGQUNBQkJLQUFCQ0NRQkFLQUVBQ0NVQUFLRUVBQ0NVQUFDRUVnQ0FVQUlBRUVvQUFFSUpBRUFvQVFBSUpRQUFvUVFBSUpRQUFJUVNBSUJRQWdBUVNnQUFRZ2tBUUNnQkFBZ2xBQUNoQkFBZ2xBQUFoQklBZ0ZBQ0FCQktBQUJDQ1FCQUtBRUFDQ1VBQUtFRUFDQ1VBQUNFRWdDQVVBSUFFRW9BQUVMOUYvblhuWlhveDdLRkFBQUFBRWxGVGtTdVFtQ0MiLCAic2l6ZXMiOiAiNTEyeDUxMiIsICJ0eXBlIjogImltYWdlL3BuZyJ9XX0=">
+<link rel="apple-touch-icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAC0CAIAAACyr5FlAAAE4ElEQVR4nO3dQXLbOhBFUTjlkZVteP8LyjaSeQaoUrlkPxGioO7XwD3TXz8im1dNyk7st4/L7wb85Ff2AcAXcUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAPSe/YBRPv35+/p//fyude/Dnzb6p9DPlPG1T6JbHRbmVLGxD/H3y5xzL2im/SxSxw4gTggEQck4oBEHJCIAxJxQCIOSMQBiTggEQck4oBEHGds8l37lf8+R8z3ThcOZcE4sr6fvl4lS8Xh8NcsVkpkhTgcmvhugUpqx+GZxVelEyn8acW/jFbkIJWSm6PixCuukGJxTMxi/GqlvKiDSnE8eZFmXRiTwwhQJo5zl+TVV8LzqGYpEIf/BfA/wnPc43h07rkTr3W0h6zjeGjWPoMuetjf+cYxPmLP+VY//mb7RbAFJpvyUXkux80xOCzbLG7UPR27zVF3lMrgoRruD6841iujK9qH0W1lZDTlsrhR6xxdNketqZ02cgo++8Nic+SWoV49/hVjXn2cy+a4z2FSE1U5nfw4Dt9GVUb5kMOTcri5JMexZxmdfx+ZcexcRmfeR/5tBbbS4mBtdM7Lw3RzbFJGZ3uyOXHcfzfYDut17p9y1vJIiCP9IbyilKHZ3VY2XBud4YlHx8EN5Q63m4vd5oAPozg2Xxud1RBC4+BR9EnBA3TZHFbvmFw+o4iLg7UxReQYXTYHDFnE4bNITZgMJCgO7ikThQ0zf3OYvEvcOIwlPw7YIg5IEXHwwDFdzEiTN4fDndVW+nC4rUAiDkjEAenlcfA0+iIBg83cHOkPXP5yR/Se+Nrp7r/5+n/duWCeOSDtG8fgPXvnZ6ZNbysPXfLn+yh6b9p3c+AQcUAiDkjEAYk4IG0aR9GPD8E2jaPRx4BNv84xbueGto6jX/j4n2BchfWPmozxYwQmZeSO6OWb4/L52ySCO0xSeEjAMe/7QIpDxAGJOCC5/2D8naUPJyKOio975mJGym0FEnFAyo8j/c7qyWEsQXHw2DFR2DDzN0fzeJdYMRmIRRzwFBcHd5YpIsfosjlMFqkDn1GExsHyeFLwAF02R3N6xySyGoJRHHATHYfbLyOy4vZrrOw2x7Z9GJ54Qhw8lp6QMrSczcHN5YbbDaWzu610W/Vhe7JpcTj/DvdIh6eZeBc23RxwYP2jJpdfHs5ro6Vvjp37MC+jpcfRdu3Dv4zmEMeIxfqocjoWcYy8S6oM9NDIiTisjWYSR9umj0JltNbePi4uh9KGL7/P+MZVPDWXzdENjqbcCqlYRnOLo63YR9Eymttt5Wr82hvO9Kr6Wdhtjm58WLYrpHoZzXZzdA9deJ8RFz3s76zjaI8vhtxZ1zraQ+5xtLM3jsi5+x/hOQXi6DwvgOdRzVImjvb0s+esS2JyGAEqxdGmfjZJ+UBUqIxWLo7O9uPrHbWy6ErG0VVJpGIWnekXwUaUGHqJg1QKb44rzxVSOotuhTiuHCpZoImrpeLoshJZKYtuwTiuYipZr4mrleP4am4oCwfx1S5x3FjsO2QvsmkcGFH46xx4NeKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkj/AeiApqiHK+bJAAAAAElFTkSuQmCC">
+<link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAC0CAIAAACyr5FlAAAE4ElEQVR4nO3dQXLbOhBFUTjlkZVteP8LyjaSeQaoUrlkPxGioO7XwD3TXz8im1dNyk7st4/L7wb85Ff2AcAXcUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAPSe/YBRPv35+/p//fyude/Dnzb6p9DPlPG1T6JbHRbmVLGxD/H3y5xzL2im/SxSxw4gTggEQck4oBEHJCIAxJxQCIOSMQBiTggEQck4oBEHGds8l37lf8+R8z3ThcOZcE4sr6fvl4lS8Xh8NcsVkpkhTgcmvhugUpqx+GZxVelEyn8acW/jFbkIJWSm6PixCuukGJxTMxi/GqlvKiDSnE8eZFmXRiTwwhQJo5zl+TVV8LzqGYpEIf/BfA/wnPc43h07rkTr3W0h6zjeGjWPoMuetjf+cYxPmLP+VY//mb7RbAFJpvyUXkux80xOCzbLG7UPR27zVF3lMrgoRruD6841iujK9qH0W1lZDTlsrhR6xxdNketqZ02cgo++8Nic+SWoV49/hVjXn2cy+a4z2FSE1U5nfw4Dt9GVUb5kMOTcri5JMexZxmdfx+ZcexcRmfeR/5tBbbS4mBtdM7Lw3RzbFJGZ3uyOXHcfzfYDut17p9y1vJIiCP9IbyilKHZ3VY2XBud4YlHx8EN5Q63m4vd5oAPozg2Xxud1RBC4+BR9EnBA3TZHFbvmFw+o4iLg7UxReQYXTYHDFnE4bNITZgMJCgO7ikThQ0zf3OYvEvcOIwlPw7YIg5IEXHwwDFdzEiTN4fDndVW+nC4rUAiDkjEAenlcfA0+iIBg83cHOkPXP5yR/Se+Nrp7r/5+n/duWCeOSDtG8fgPXvnZ6ZNbysPXfLn+yh6b9p3c+AQcUAiDkjEAYk4IG0aR9GPD8E2jaPRx4BNv84xbueGto6jX/j4n2BchfWPmozxYwQmZeSO6OWb4/L52ySCO0xSeEjAMe/7QIpDxAGJOCC5/2D8naUPJyKOio975mJGym0FEnFAyo8j/c7qyWEsQXHw2DFR2DDzN0fzeJdYMRmIRRzwFBcHd5YpIsfosjlMFqkDn1GExsHyeFLwAF02R3N6xySyGoJRHHATHYfbLyOy4vZrrOw2x7Z9GJ54Qhw8lp6QMrSczcHN5YbbDaWzu610W/Vhe7JpcTj/DvdIh6eZeBc23RxwYP2jJpdfHs5ro6Vvjp37MC+jpcfRdu3Dv4zmEMeIxfqocjoWcYy8S6oM9NDIiTisjWYSR9umj0JltNbePi4uh9KGL7/P+MZVPDWXzdENjqbcCqlYRnOLo63YR9Eymttt5Wr82hvO9Kr6Wdhtjm58WLYrpHoZzXZzdA9deJ8RFz3s76zjaI8vhtxZ1zraQ+5xtLM3jsi5+x/hOQXi6DwvgOdRzVImjvb0s+esS2JyGAEqxdGmfjZJ+UBUqIxWLo7O9uPrHbWy6ErG0VVJpGIWnekXwUaUGHqJg1QKb44rzxVSOotuhTiuHCpZoImrpeLoshJZKYtuwTiuYipZr4mrleP4am4oCwfx1S5x3FjsO2QvsmkcGFH46xx4NeKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkj/AeiApqiHK+bJAAAAAElFTkSuQmCC">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Share+Tech+Mono&family=Orbitron:wght@700;900&display=swap');
+
+  :root{
+    --bg:#0a0b0c;
+    --bg-edge:#000000;
+    --panel:#1e2226;
+    --panel-light:#2b3036;
+    --panel-dark:#15181a;
+    --bezel:#0d0f10;
+    --brass:#ffe600;
+    --brass-dim:#e0c400;
+    --digit:#ffffff;
+    --text-bright:#f4f4f2;
+    --text-dim:#8a9099;
+    --text-faint:#565b60;
+    --state-idle:#5c6268;
+    --state-prepare:#4fa8ff;
+    --state-work:#3ddc74;
+    --state-warning:#ffb020;
+    --state-rest:#ff4747;
+    --state-done:#f4d03f;
+    --radius:18px;
+  }
+
+  *{box-sizing:border-box;}
+
+  html,body{
+    margin:0;
+    min-height:100vh;
+    min-height:100dvh;
+    background:
+      radial-gradient(ellipse at 50% -10%, #1a1d1f 0%, var(--bg) 55%, var(--bg-edge) 100%);
+    color:var(--text-bright);
+    font-family:'Oswald',sans-serif;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:calc(28px + env(safe-area-inset-top)) 16px calc(28px + env(safe-area-inset-bottom));
+  }
+
+  .shell{
+    width:100%;
+    max-width:480px;
+  }
+
+  /* ---------- header ---------- */
+  .topbar{
+    display:flex;
+    align-items:flex-end;
+    justify-content:space-between;
+    margin-bottom:16px;
+    padding:0 4px;
+  }
+  .brand{
+    display:flex;
+    flex-direction:column;
+    gap:2px;
+  }
+  .brand .stripe{
+    width:38px;
+    height:4px;
+    background:linear-gradient(90deg,var(--brass),var(--brass-dim));
+    border-radius:2px;
+    margin-bottom:6px;
+  }
+  .brand h1{
+    margin:0;
+    font-size:26px;
+    font-weight:700;
+    letter-spacing:2px;
+    text-transform:uppercase;
+    line-height:1;
+  }
+  .brand p{
+    margin:2px 0 0;
+    font-size:11px;
+    letter-spacing:3px;
+    text-transform:uppercase;
+    color:var(--text-dim);
+  }
+  .icon-row{
+    display:flex;
+    gap:8px;
+  }
+  .icon-btn{
+    width:38px;
+    height:38px;
+    border-radius:50%;
+    border:1.5px solid var(--brass-dim);
+    background:var(--panel-dark);
+    color:var(--text-dim);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    cursor:pointer;
+    transition:color .15s,border-color .15s,transform .1s;
+  }
+  .icon-btn:hover{color:var(--text-bright);border-color:#4a5057;}
+  .icon-btn:active{transform:scale(.93);}
+  .icon-btn svg{width:18px;height:18px;}
+  .icon-btn.muted{color:var(--state-rest);border-color:var(--state-rest);}
+
+  /* ---------- machine panel ---------- */
+  .machine{
+    position:relative;
+    background:
+      repeating-linear-gradient(135deg, #232831 0px, #232831 2px, #1c2026 2px, #1c2026 4px);
+    border-radius:var(--radius);
+    padding:22px 18px 26px;
+    box-shadow:
+      0 30px 60px -20px rgba(0,0,0,.7),
+      inset 0 0 0 1px #34393e,
+      inset 0 2px 4px rgba(255,255,255,.04);
+    transition:box-shadow .4s ease;
+  }
+  .machine.glow-prepare{ box-shadow:0 30px 60px -20px rgba(0,0,0,.7), inset 0 0 0 1px #34393e, 0 0 40px -6px var(--state-prepare); }
+  .machine.glow-work{    box-shadow:0 30px 60px -20px rgba(0,0,0,.7), inset 0 0 0 1px #34393e, 0 0 40px -6px var(--state-work); }
+  .machine.glow-warning{ box-shadow:0 30px 60px -20px rgba(0,0,0,.7), inset 0 0 0 1px #34393e, 0 0 46px -4px var(--state-warning); }
+  .machine.glow-rest{    box-shadow:0 30px 60px -20px rgba(0,0,0,.7), inset 0 0 0 1px #34393e, 0 0 40px -6px var(--state-rest); }
+  .machine.glow-done{    box-shadow:0 30px 60px -20px rgba(0,0,0,.7), inset 0 0 0 1px #34393e, 0 0 50px -2px var(--state-done); }
+
+  .bolt{
+    position:absolute;
+    width:10px;height:10px;
+    border-radius:50%;
+    background:radial-gradient(circle at 35% 30%, #d7dadd, #6c7278 60%, #3a3e42 100%);
+    box-shadow:inset 0 0 1px rgba(0,0,0,.6);
+  }
+  .bolt::after{
+    content:"";
+    position:absolute;
+    top:50%;left:15%;
+    width:70%;height:1px;
+    background:#3a3e42;
+    transform:rotate(35deg);
+  }
+  .bolt.tl{top:10px;left:10px;}
+  .bolt.tr{top:10px;right:10px;}
+  .bolt.bl{bottom:10px;left:10px;}
+  .bolt.br{bottom:10px;right:10px;}
+
+  .status-row{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    margin-bottom:6px;
+  }
+  .round-readout{
+    font-size:13px;
+    letter-spacing:2px;
+    color:var(--text-dim);
+    text-transform:uppercase;
+  }
+  .round-readout strong{
+    color:var(--text-bright);
+    font-weight:600;
+  }
+  .lamp-group{
+    display:flex;
+    align-items:center;
+    gap:8px;
+  }
+  .lamp{
+    width:12px;height:12px;
+    border-radius:50%;
+    background:var(--state-idle);
+    box-shadow:0 0 6px 1px var(--state-idle);
+    transition:background .25s,box-shadow .25s;
+  }
+  .lamp.pulse{ animation:pulse 1s ease-in-out infinite; }
+  @keyframes pulse{ 0%,100%{opacity:1;} 50%{opacity:.35;} }
+  .phase-label{
+    font-size:13px;
+    font-weight:600;
+    letter-spacing:2px;
+    text-transform:uppercase;
+    color:var(--state-idle);
+    transition:color .25s;
+  }
+
+  .display-window{
+    position:relative;
+    margin:14px 0 16px;
+    background:var(--bezel);
+    border-radius:10px;
+    padding:22px 10px 16px;
+    box-shadow:inset 0 0 0 1px #000, inset 0 6px 14px rgba(0,0,0,.6);
+    overflow:hidden;
+  }
+  .display-window::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:repeating-linear-gradient(to bottom, rgba(255,255,255,.025) 0px, rgba(255,255,255,.025) 1px, transparent 1px, transparent 3px);
+    pointer-events:none;
+  }
+  .digits{
+    font-family:'Orbitron',monospace;
+    font-weight:900;
+    font-size:clamp(52px,16.5vw,92px);
+    line-height:1;
+    text-align:center;
+    color:var(--digit);
+    letter-spacing:1px;
+    -webkit-font-smoothing:antialiased;
+    text-rendering:optimizeLegibility;
+    user-select:none;
+  }
+  .sub-label{
+    text-align:center;
+    font-size:11px;
+    letter-spacing:3px;
+    text-transform:uppercase;
+    color:var(--text-faint);
+    margin-top:4px;
+  }
+  .progress-track{
+    height:4px;
+    border-radius:2px;
+    background:#0c0d0e;
+    overflow:hidden;
+    box-shadow:inset 0 1px 2px rgba(0,0,0,.7);
+  }
+  .progress-fill{
+    height:100%;
+    width:0%;
+    background:var(--state-idle);
+    transition:width .12s linear, background .25s;
+  }
+
+  /* ---------- controls ---------- */
+  .controls{
+    display:grid;
+    grid-template-columns:1fr 1.6fr;
+    gap:10px;
+    margin-top:16px;
+  }
+  button{font-family:inherit;}
+  .btn{
+    border:none;
+    border-radius:12px;
+    padding:16px 0;
+    font-size:15px;
+    font-weight:600;
+    letter-spacing:2px;
+    text-transform:uppercase;
+    cursor:pointer;
+    transition:transform .08s, filter .15s;
+  }
+  .btn:active{transform:scale(.97);}
+  .btn-reset{
+    background:var(--panel-light);
+    color:var(--text-dim);
+    box-shadow:inset 0 0 0 1.5px var(--brass-dim);
+  }
+  .btn-reset:hover{color:var(--text-bright);}
+  .btn-primary{
+    background:linear-gradient(180deg,#fff066,var(--brass) 55%,var(--brass-dim));
+    color:#1a1304;
+    box-shadow:0 6px 14px -4px rgba(255,230,0,.5), inset 0 1px 0 rgba(255,255,255,.5);
+  }
+  .btn-primary.is-running{
+    background:linear-gradient(180deg,#5c6268,#454a4f 55%,#34393e);
+    color:var(--text-bright);
+    box-shadow:0 6px 14px -4px rgba(0,0,0,.5), inset 0 1px 0 rgba(255,255,255,.08);
+  }
+  .btn:focus-visible{outline:2px solid var(--brass);outline-offset:3px;}
+
+  /* ---------- settings drawer ---------- */
+  .drawer{
+    margin-top:14px;
+    max-height:0;
+    overflow:hidden;
+    transition:max-height .3s ease;
+  }
+  .drawer.open{ max-height:900px; }
+  .drawer-inner{
+    background:var(--panel-dark);
+    border:1px solid #2a2f34;
+    border-radius:14px;
+    padding:16px;
+    display:flex;
+    flex-direction:column;
+    gap:16px;
+  }
+  .field{
+    display:flex;
+    flex-direction:column;
+    gap:8px;
+  }
+  .field-head{
+    display:flex;
+    align-items:baseline;
+    justify-content:space-between;
+  }
+  .field-head label{
+    font-size:12px;
+    letter-spacing:2px;
+    text-transform:uppercase;
+    color:var(--text-dim);
+  }
+  .field-head .val{
+    font-family:'Share Tech Mono',monospace;
+    font-size:16px;
+    color:var(--text-bright);
+  }
+  .val-editable{
+    cursor:pointer;
+    border-bottom:1px dashed #4a5057;
+    padding:2px 4px;
+    border-radius:4px;
+  }
+  .val-editable:hover{
+    background:var(--panel-light);
+  }
+  .val-edit-input{
+    font-family:'Share Tech Mono',monospace;
+    font-size:16px;
+    color:var(--text-bright);
+    background:var(--panel-light);
+    border:1px solid var(--brass);
+    border-radius:4px;
+    padding:1px 4px;
+    width:64px;
+    text-align:right;
+  }
+  .val-edit-input:focus{ outline:none; }
+  .stepper-row{
+    display:flex;
+    align-items:center;
+    gap:8px;
+  }
+  .step-btn{
+    width:34px;height:34px;
+    border-radius:8px;
+    border:1.5px solid var(--brass-dim);
+    background:var(--panel-light);
+    color:var(--text-bright);
+    font-size:18px;
+    line-height:1;
+    cursor:pointer;
+    display:flex;align-items:center;justify-content:center;
+    flex:none;
+  }
+  .step-btn:active{transform:scale(.92);}
+  .chips{
+    display:flex;
+    gap:8px;
+    flex:1;
+    flex-wrap:wrap;
+  }
+  .chip{
+    flex:1;
+    min-width:64px;
+    text-align:center;
+    padding:8px 6px;
+    border-radius:8px;
+    border:1px solid #3a4046;
+    background:transparent;
+    color:var(--text-dim);
+    font-size:12px;
+    letter-spacing:1px;
+    cursor:pointer;
+    text-transform:uppercase;
+  }
+  .chip.active{
+    background:var(--brass-dim);
+    border-color:var(--brass);
+    color:#fff;
+  }
+  .preset-chip{
+    display:flex;
+    align-items:center;
+    gap:6px;
+  }
+  .preset-del{
+    color:var(--text-faint);
+    font-size:14px;
+    line-height:1;
+    padding:0 2px;
+  }
+  .preset-del:hover{ color:var(--state-rest); }
+  .preset-add{
+    margin-top:8px;
+    width:100%;
+    padding:8px 6px;
+    border-radius:8px;
+    border:1px solid var(--brass-dim);
+    background:transparent;
+    color:var(--brass);
+    font-size:12px;
+    letter-spacing:1px;
+    text-transform:uppercase;
+    cursor:pointer;
+  }
+  .preset-add:hover{ background:rgba(255,230,0,.08); }
+  .preset-save-row{
+    margin-top:8px;
+    display:flex;
+    gap:6px;
+  }
+  .preset-name-input{
+    flex:1;
+    width:auto;
+    text-align:left;
+  }
+  .toggle-row{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+  }
+  .switch{
+    width:46px;height:26px;
+    border-radius:13px;
+    background:#34393e;
+    position:relative;
+    cursor:pointer;
+    flex:none;
+    transition:background .2s;
+  }
+  .switch.on{background:var(--brass-dim);}
+  .switch::after{
+    content:"";
+    position:absolute;
+    top:3px;left:3px;
+    width:20px;height:20px;
+    border-radius:50%;
+    background:#f4f4f2;
+    transition:left .2s;
+  }
+  .switch.on::after{left:23px;}
+  .divider{height:1px;background:#2a2f34;margin:0 -16px;}
+  .hint{
+    font-size:11px;
+    color:var(--text-faint);
+    line-height:1.5;
+  }
+</style>
+</head>
+<body>
+
+<div class="shell">
+
+  <div class="topbar">
+    <div class="brand">
+      <div class="stripe"></div>
+      <h1>Seconds Out</h1>
+      <p>Boxing round timer</p>
+    </div>
+    <div class="icon-row">
+      <button class="icon-btn" id="muteBtn" aria-label="Toggle sound" title="Toggle sound">
+        <svg id="muteIcon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 5 6 9H2v6h4l5 4z"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"/></svg>
+      </button>
+      <button class="icon-btn" id="settingsBtn" aria-label="Settings" title="Settings">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 1 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.6 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 1 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.6a1.65 1.65 0 0 0 1-1.51V3a2 2 0 1 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 1 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+      </button>
+    </div>
+  </div>
+
+  <div class="machine glow-idle" id="machine">
+    <div class="bolt tl"></div><div class="bolt tr"></div><div class="bolt bl"></div><div class="bolt br"></div>
+
+    <div class="status-row">
+      <div class="round-readout">ROUND <strong id="roundNow">—</strong> / <span id="roundTotal">12</span></div>
+      <div class="lamp-group">
+        <span class="phase-label" id="phaseLabel">READY</span>
+        <span class="lamp" id="lamp"></span>
+      </div>
+    </div>
+
+    <div class="display-window">
+      <div class="digits" id="digits">03:00</div>
+    </div>
+
+    <div class="progress-track"><div class="progress-fill" id="progressFill"></div></div>
+
+    <div class="controls">
+      <button class="btn btn-reset" id="resetBtn">Reset</button>
+      <button class="btn btn-primary" id="startBtn">Start</button>
+    </div>
+  </div>
+
+  <div class="drawer" id="drawer">
+    <div class="drawer-inner">
+
+      <div class="hint">Tap a number to type it directly.</div>
+
+      <div class="field">
+        <div class="field-head"><label>Presets</label></div>
+        <div class="chips" id="presetList"></div>
+        <button class="preset-add" id="savePresetBtn">Save As Preset</button>
+      </div>
+
+      <div class="divider"></div>
+
+      <div class="field">
+        <div class="field-head"><label>Round length</label><span class="val val-editable" id="roundVal" data-key="round" tabindex="0">3:00</span></div>
+        <div class="stepper-row">
+          <button class="step-btn" data-adj="round" data-delta="-5">−</button>
+          <div class="hint" style="flex:1;text-align:center;">±5s</div>
+          <button class="step-btn" data-adj="round" data-delta="5">+</button>
+        </div>
+      </div>
+
+      <div class="field">
+        <div class="field-head"><label>Rest between rounds</label><span class="val val-editable" id="restVal" data-key="rest" tabindex="0">1:00</span></div>
+        <div class="stepper-row">
+          <button class="step-btn" data-adj="rest" data-delta="-5">−</button>
+          <div class="hint" style="flex:1;text-align:center;">±5s</div>
+          <button class="step-btn" data-adj="rest" data-delta="5">+</button>
+        </div>
+      </div>
+
+      <div class="divider"></div>
+
+      <div class="field">
+        <div class="field-head"><label>Number of rounds</label><span class="val val-editable" id="roundsCountVal" data-key="rounds" tabindex="0">12</span></div>
+        <div class="stepper-row">
+          <button class="step-btn" data-adj="rounds" data-delta="-1">−</button>
+          <div class="hint" style="flex:1;text-align:center;">Total rounds in the session</div>
+          <button class="step-btn" data-adj="rounds" data-delta="1">+</button>
+        </div>
+      </div>
+
+      <div class="field">
+        <div class="field-head"><label>Get ready countdown</label><span class="val val-editable" id="prepVal" data-key="prep" tabindex="0">10s</span></div>
+        <div class="stepper-row">
+          <button class="step-btn" data-adj="prep" data-delta="-5">−</button>
+          <div class="hint" style="flex:1;text-align:center;">Pause before round 1 begins</div>
+          <button class="step-btn" data-adj="prep" data-delta="5">+</button>
+        </div>
+      </div>
+
+      <div class="divider"></div>
+
+
+      <div class="toggle-row">
+        <label style="font-size:13px;letter-spacing:1px;">Interval alerts</label>
+        <div class="switch" id="alertsSwitch"></div>
+      </div>
+      <div class="hint">1, 2 and 3 beeps at 1:00, 2:00 and 2:30 into a round, then a tick every second for the final 10. Rest is silent — each round opens with one long beep. The long beep always plays; mute the speaker icon to silence everything.</div>
+
+      <div class="toggle-row">
+        <label style="font-size:13px;letter-spacing:1px;">Count up instead of down</label>
+        <div class="switch" id="countUpSwitch"></div>
+      </div>
+
+      <div class="hint">Round and rest length, total rounds, and get-ready time lock once a round is under way — reset to make changes.</div>
+    </div>
+  </div>
+
+</div>
+
+<script>
+(function(){
+  "use strict";
+
+  var defaults = { roundSec:180, restSec:60, rounds:12, alertsOn:true, prepSec:10, countUp:false, muted:false };
+  var settings = Object.assign({}, defaults);
+
+  var el = {
+    digits: document.getElementById('digits'),
+    roundNow: document.getElementById('roundNow'),
+    roundTotal: document.getElementById('roundTotal'),
+    phaseLabel: document.getElementById('phaseLabel'),
+    lamp: document.getElementById('lamp'),
+    machine: document.getElementById('machine'),
+    progressFill: document.getElementById('progressFill'),
+    startBtn: document.getElementById('startBtn'),
+    resetBtn: document.getElementById('resetBtn'),
+    settingsBtn: document.getElementById('settingsBtn'),
+    drawer: document.getElementById('drawer'),
+    muteBtn: document.getElementById('muteBtn'),
+    countUpSwitch: document.getElementById('countUpSwitch'),
+    alertsSwitch: document.getElementById('alertsSwitch'),
+    roundVal: document.getElementById('roundVal'),
+    restVal: document.getElementById('restVal'),
+    roundsCountVal: document.getElementById('roundsCountVal'),
+    prepVal: document.getElementById('prepVal'),
+    presetList: document.getElementById('presetList'),
+    savePresetBtn: document.getElementById('savePresetBtn')
+  };
+
+  // ---------- persistence ----------
+  // window.storage only exists inside Claude.ai's artifact preview. Once this file is
+  // saved and opened directly (e.g. on a phone), there is no window.storage, so this
+  // falls back to ordinary localStorage, which works fine for a standalone page.
+  function storageGet(key){
+    if(window.storage){
+      return window.storage.get(key, false)
+        .then(function(res){ return res ? res.value : null; })
+        .catch(function(){ return null; });
+    }
+    try{ return Promise.resolve(localStorage.getItem(key)); }
+    catch(e){ return Promise.resolve(null); }
+  }
+  function storageSet(key, value){
+    if(window.storage){
+      try{ window.storage.set(key, value, false).catch(function(){}); }catch(e){}
+      return;
+    }
+    try{ localStorage.setItem(key, value); }catch(e){ /* storage unavailable, fail silently */ }
+  }
+
+  function loadSettings(){
+    storageGet('seconds-out-settings').then(function(value){
+      if(value){
+        try{
+          var saved = JSON.parse(value);
+          settings = Object.assign({}, defaults, saved);
+        }catch(e){ /* ignore malformed data, keep defaults */ }
+      }
+      renderSettings();
+    });
+  }
+  function saveSettings(){
+    storageSet('seconds-out-settings', JSON.stringify(settings));
+  }
+
+  var customPresets = [];
+  function loadPresets(){
+    storageGet('seconds-out-presets').then(function(value){
+      if(value){
+        try{
+          var saved = JSON.parse(value);
+          if(Array.isArray(saved)) customPresets = saved;
+        }catch(e){ /* ignore malformed data */ }
+      }
+      renderPresets();
+    });
+  }
+  function savePresets(){
+    storageSet('seconds-out-presets', JSON.stringify(customPresets));
+  }
+
+  // ---------- audio ----------
+  var audioCtx = null;
+  var masterBus = null;
+  function ensureAudio(){
+    if(audioCtx) return;
+    try{
+      var AC = window.AudioContext || window.webkitAudioContext;
+      audioCtx = new AC();
+      // Compressor + makeup gain lets us push beeps louder than plain gain would allow
+      // before the waveform clips, similar to how alarm/notification sounds get "loudness".
+      var compressor = audioCtx.createDynamicsCompressor();
+      compressor.threshold.setValueAtTime(-14, audioCtx.currentTime);
+      compressor.knee.setValueAtTime(6, audioCtx.currentTime);
+      compressor.ratio.setValueAtTime(10, audioCtx.currentTime);
+      compressor.attack.setValueAtTime(0.002, audioCtx.currentTime);
+      compressor.release.setValueAtTime(0.12, audioCtx.currentTime);
+      var makeup = audioCtx.createGain();
+      makeup.gain.setValueAtTime(1.6, audioCtx.currentTime);
+      compressor.connect(makeup);
+      makeup.connect(audioCtx.destination);
+      masterBus = compressor;
+    }catch(e){ audioCtx = null; masterBus = null; }
+  }
+  function tone(time, freq, dur, type, vol){
+    if(!audioCtx || settings.muted) return;
+    var t = audioCtx.currentTime + time;
+    var osc = audioCtx.createOscillator();
+    var gain = audioCtx.createGain();
+    osc.type = type;
+    osc.frequency.setValueAtTime(freq, t);
+    var attack = 0.012;
+    var release = Math.min(0.04, dur*0.15);
+    gain.gain.setValueAtTime(0.0001, t);
+    gain.gain.exponentialRampToValueAtTime(vol, t + attack);
+    gain.gain.setValueAtTime(vol, t + Math.max(attack, dur - release));
+    gain.gain.exponentialRampToValueAtTime(0.0001, t + dur);
+    osc.connect(gain);
+    gain.connect(masterBus || audioCtx.destination);
+    osc.start(t);
+    osc.stop(t + dur + 0.05);
+  }
+  function vibrate(pattern){
+    if(navigator.vibrate){ try{ navigator.vibrate(pattern); }catch(e){} }
+  }
+  var BEEP_FREQ = 2800;        // matches the recorded device's tone almost exactly
+  var MARKER_BEEP_LEN = 0.28;  // the 1/2/3-beep clusters at 1:00, 2:00, 2:30
+  var COUNTDOWN_BEEP_LEN = 0.5;// the final-10-seconds ticks
+  var FINAL_BEEP_LEN = 3.0;    // the long beep that opens a round
+  var BEEP_GAP = 0.22;         // gap between beeps within a marker cluster
+  var BEEP_VOLUME = 1.1;
+  function fireBeeps(count, len){
+    var pattern = [];
+    var ms = Math.round(len*1000);
+    for(var i=0;i<count;i++){
+      tone(i*(len+BEEP_GAP), BEEP_FREQ, len, 'sine', BEEP_VOLUME);
+      if(i>0) pattern.push(90);
+      pattern.push(ms);
+    }
+    vibrate(pattern.length>1 ? pattern : pattern[0]);
+  }
+  // Optional progress alerts (1/2/3 min markers, the countdown ticks) — silenced by the Interval alerts toggle.
+  function alertBeep(count, len){
+    if(!settings.alertsOn) return;
+    fireBeeps(count, len || MARKER_BEEP_LEN);
+  }
+  // The long beep that opens a round (after prepare or rest) — always plays unless sound is fully muted.
+  function cueBeep(){
+    fireBeeps(1, FINAL_BEEP_LEN);
+  }
+
+  // ---------- timer engine ----------
+  var STATE = { phase:'idle', round:0, phaseEndAt:0, phaseDurationMs:0, remainingAtPause:null, running:false, markerFlags:{}, lastCountdownSec:null, cueFired:false };
+  var ALERT_MARKERS = [ {t:120,n:1,minDuration:131}, {t:60,n:2,minDuration:71}, {t:30,n:3,minDuration:60} ];
+  var tickHandle = null;
+
+  function fmt(totalSeconds){
+    totalSeconds = Math.max(0, Math.round(totalSeconds));
+    var m = Math.floor(totalSeconds/60);
+    var s = totalSeconds%60;
+    return (m<10?'0':'')+m+':'+(s<10?'0':'')+s;
+  }
+
+  function setMachineGlow(phaseClass){
+    el.machine.className = 'machine glow-' + phaseClass;
+  }
+
+  function paintIdle(){
+    STATE.phase='idle';
+    el.phaseLabel.textContent='READY';
+    el.phaseLabel.style.color='var(--state-idle)';
+    el.lamp.style.background='var(--state-idle)';
+    el.lamp.style.boxShadow='0 0 6px 1px var(--state-idle)';
+    el.lamp.classList.remove('pulse');
+    el.roundNow.textContent='—';
+    el.progressFill.style.width='0%';
+    el.progressFill.style.background='var(--state-idle)';
+    setMachineGlow('idle');
+    el.digits.textContent = settings.countUp ? '00:00' : fmt(settings.roundSec);
+    el.startBtn.textContent='Start';
+    el.startBtn.classList.remove('is-running');
+    setControlsLocked(false);
+  }
+
+  function setControlsLocked(locked){
+    var steppers = document.querySelectorAll('.step-btn, .chip, #countUpSwitch, .val-editable, #savePresetBtn');
+    steppers.forEach(function(node){
+      node.style.opacity = locked ? '0.4' : '1';
+      node.style.pointerEvents = locked ? 'none' : 'auto';
+    });
+  }
+
+  function phaseMeta(phase, atWarning){
+    if(phase==='prepare') return {label:'GET READY', color:'var(--state-prepare)', glow:'prepare'};
+    if(phase==='work') return atWarning
+      ? {label:'WARNING', color:'var(--state-warning)', glow:'warning'}
+      : {label:'WORK', color:'var(--state-work)', glow:'work'};
+    if(phase==='rest') return {label:'REST', color:'var(--state-rest)', glow:'rest'};
+    if(phase==='done') return {label:'DONE', color:'var(--state-done)', glow:'done'};
+    return {label:'READY', color:'var(--state-idle)', glow:'idle'};
+  }
+
+  function enterPhase(phase, durationSec, opts){
+    opts = opts || {};
+    STATE.phase = phase;
+    STATE.phaseDurationMs = durationSec*1000;
+    STATE.phaseEndAt = Date.now() + durationSec*1000;
+    STATE.lastCountdownSec = null;
+    STATE.cueFired = false;
+    STATE.markerFlags = {};
+    if(phase==='work'){
+      ALERT_MARKERS.forEach(function(m){
+        // Each marker needs the round to be at least minDuration long, e.g. the
+        // 30s marker is skipped entirely on any round under a full minute.
+        STATE.markerFlags[m.t] = durationSec < m.minDuration;
+      });
+    }
+    if(opts.round) STATE.round = opts.round;
+
+    if(phase==='work') el.roundNow.textContent = String(STATE.round);
+
+    setControlsLocked(true);
+    render();
+  }
+
+  // ---------- screen wake lock (keeps the phone awake while a session is running) ----------
+  var wakeLock = null;
+  function requestWakeLock(){
+    if(!('wakeLock' in navigator)) return;
+    navigator.wakeLock.request('screen').then(function(lock){
+      wakeLock = lock;
+    }).catch(function(){ /* not available, e.g. low battery mode - fail silently */ });
+  }
+  function releaseWakeLock(){
+    if(wakeLock){
+      wakeLock.release().catch(function(){});
+      wakeLock = null;
+    }
+  }
+  document.addEventListener('visibilitychange', function(){
+    if(document.visibilityState==='visible' && STATE.running) requestWakeLock();
+  });
+
+  function startTimer(){
+    ensureAudio();
+    requestWakeLock();
+    if(STATE.phase==='idle' || STATE.phase==='done'){
+      STATE.round = 0;
+      if(settings.prepSec>0){
+        enterPhase('prepare', settings.prepSec);
+      } else {
+        enterPhase('work', settings.roundSec, {round:1});
+      }
+      STATE.running = true;
+      runLoop();
+      el.startBtn.textContent='Pause';
+      el.startBtn.classList.add('is-running');
+      return;
+    }
+    if(!STATE.running){
+      // resume from pause
+      STATE.phaseEndAt = Date.now() + STATE.remainingAtPause;
+      STATE.running = true;
+      runLoop();
+      el.startBtn.textContent='Pause';
+      el.startBtn.classList.add('is-running');
+    } else {
+      pauseTimer();
+    }
+  }
+
+  function pauseTimer(){
+    STATE.running = false;
+    STATE.remainingAtPause = Math.max(0, STATE.phaseEndAt - Date.now());
+    clearTimeout(tickHandle);
+    releaseWakeLock();
+    el.startBtn.textContent='Resume';
+    el.startBtn.classList.remove('is-running');
+  }
+
+  function resetTimer(){
+    STATE.running = false;
+    clearTimeout(tickHandle);
+    releaseWakeLock();
+    paintIdle();
+  }
+
+  function advancePhase(){
+    if(STATE.phase==='prepare'){
+      enterPhase('work', settings.roundSec, {round:1});
+      runLoop();
+      return;
+    }
+    if(STATE.phase==='work'){
+      if(STATE.round >= settings.rounds){
+        enterPhase('done', 0);
+        STATE.running = false;
+        clearTimeout(tickHandle);
+        releaseWakeLock();
+        el.startBtn.textContent='Start';
+        el.startBtn.classList.remove('is-running');
+        setControlsLocked(false);
+        return;
+      }
+      if(settings.restSec>0){
+        enterPhase('rest', settings.restSec);
+      } else {
+        enterPhase('work', settings.roundSec, {round:STATE.round+1});
+      }
+      runLoop();
+      return;
+    }
+    if(STATE.phase==='rest'){
+      enterPhase('work', settings.roundSec, {round:STATE.round+1});
+      runLoop();
+      return;
+    }
+  }
+
+  function runLoop(){
+    clearTimeout(tickHandle);
+    tickHandle = setTimeout(function tick(){
+      if(!STATE.running) return;
+      var remaining = STATE.phaseEndAt - Date.now();
+      if(remaining<=0){
+        // the round's own 10-tick countdown already finished above; prepare/rest's long
+        // beep already fired earlier too, so the transition itself is silent.
+        advancePhase();
+        return;
+      }
+      var remSec = remaining/1000;
+
+      if(STATE.phase==='work'){
+        ALERT_MARKERS.forEach(function(m){
+          if(!STATE.markerFlags[m.t] && remSec<=m.t){
+            STATE.markerFlags[m.t] = true;
+            alertBeep(m.n);
+          }
+        });
+        // Exactly 10 countdown ticks: remaining = 10,9,8,...,1.
+        if(remSec<=10){
+          var sec = Math.ceil(remSec);
+          if(sec>=1 && sec!==STATE.lastCountdownSec){
+            STATE.lastCountdownSec = sec;
+            alertBeep(1, COUNTDOWN_BEEP_LEN);
+          }
+        }
+      } else if(STATE.phase==='prepare' || STATE.phase==='rest'){
+        // Start the long beep early enough that it finishes exactly as the round begins,
+        // so it sits inside this countdown rather than overlapping the work timer.
+        if(!STATE.cueFired && remSec<=FINAL_BEEP_LEN){
+          STATE.cueFired = true;
+          cueBeep();
+        }
+      }
+
+      render(remaining);
+      tickHandle = setTimeout(tick, 100);
+    }, 100);
+  }
+
+  function render(remainingOverride){
+    var remaining = (typeof remainingOverride==='number') ? remainingOverride : Math.max(0, STATE.phaseEndAt - Date.now());
+    var elapsedSec = (STATE.phaseDurationMs - remaining)/1000;
+    var remainingSec = remaining/1000;
+
+    var atWarning = STATE.phase==='work' && remainingSec<=30;
+    var meta = phaseMeta(STATE.phase, atWarning);
+
+    el.phaseLabel.textContent = meta.label;
+    el.phaseLabel.style.color = meta.color;
+    el.lamp.style.background = meta.color;
+    el.lamp.style.boxShadow = '0 0 8px 2px ' + meta.color;
+    el.lamp.classList.toggle('pulse', atWarning || STATE.phase==='prepare');
+    setMachineGlow(meta.glow);
+
+    el.progressFill.style.background = meta.color;
+    var pct = STATE.phaseDurationMs>0 ? Math.min(100, (elapsedSec*1000/STATE.phaseDurationMs)*100) : 0;
+    el.progressFill.style.width = pct+'%';
+
+    if(STATE.phase==='done'){
+      el.digits.textContent = 'DONE';
+      el.roundNow.textContent = String(settings.rounds);
+      return;
+    }
+
+    var displaySec = settings.countUp ? elapsedSec : remainingSec;
+    el.digits.textContent = fmt(displaySec);
+  }
+
+  // ---------- settings UI ----------
+  function clamp(v,min,max){ return Math.max(min, Math.min(max, v)); }
+
+  var FIELD_RANGE = { round:[10,600], rest:[0,300], rounds:[1,30], prep:[0,60] };
+  var FIELD_PROP  = { round:'roundSec', rest:'restSec', rounds:'rounds', prep:'prepSec' };
+  var PREVIEW_META = {
+    round: {label:'WORK', color:'var(--state-work)', glow:'work'},
+    rest:  {label:'REST', color:'var(--state-rest)', glow:'rest'},
+    prep:  {label:'GET READY', color:'var(--state-prepare)', glow:'prepare'}
+  };
+
+  // Briefly show the value being edited on the main clock so changes are easy to see.
+  var previewTimer = null;
+  function previewSetting(key){
+    if(STATE.phase!=='idle') return;
+    var meta = PREVIEW_META[key];
+    if(!meta) return;
+    clearTimeout(previewTimer);
+    el.digits.textContent = fmt(settings[FIELD_PROP[key]]);
+    el.phaseLabel.textContent = meta.label;
+    el.phaseLabel.style.color = meta.color;
+    el.lamp.style.background = meta.color;
+    el.lamp.style.boxShadow = '0 0 8px 2px ' + meta.color;
+    el.lamp.classList.remove('pulse');
+    setMachineGlow(meta.glow);
+    previewTimer = setTimeout(function(){
+      if(STATE.phase==='idle') paintIdle();
+    }, 1400);
+  }
+
+  function adjustSetting(key, delta){
+    if(STATE.phase!=='idle' && STATE.phase!=='done') return;
+    var range = FIELD_RANGE[key], prop = FIELD_PROP[key];
+    settings[prop] = clamp(settings[prop]+delta, range[0], range[1]);
+    renderSettings();
+    saveSettings();
+    previewSetting(key);
+  }
+
+  function setSettingAbsolute(key, value){
+    if(STATE.phase!=='idle' && STATE.phase!=='done') return;
+    if(isNaN(value)) return;
+    var range = FIELD_RANGE[key], prop = FIELD_PROP[key];
+    settings[prop] = clamp(Math.round(value), range[0], range[1]);
+    renderSettings();
+    saveSettings();
+    previewSetting(key);
+  }
+
+  function parseFieldInput(key, raw){
+    raw = (raw||'').trim();
+    if(key==='round' || key==='rest'){
+      if(raw.indexOf(':')>=0){
+        var parts = raw.split(':');
+        var mm = parseInt(parts[0],10); if(isNaN(mm)) mm=0;
+        var ss = parseInt(parts[1],10); if(isNaN(ss)) ss=0;
+        return mm*60+ss;
+      }
+      return parseInt(raw,10);
+    }
+    return parseInt(raw.replace(/[^0-9]/g,''),10);
+  }
+
+  function renderSettings(){
+    el.roundVal.textContent = fmt(settings.roundSec);
+    el.restVal.textContent = fmt(settings.restSec);
+    el.roundsCountVal.textContent = settings.rounds;
+    el.prepVal.textContent = settings.prepSec + 's';
+    el.roundTotal.textContent = settings.rounds;
+    el.countUpSwitch.classList.toggle('on', settings.countUp);
+    el.alertsSwitch.classList.toggle('on', settings.alertsOn);
+    highlightPresetMatches();
+    el.muteBtn.classList.toggle('muted', settings.muted);
+    if(STATE.phase==='idle') paintIdle();
+  }
+
+  function highlightPresetMatches(){
+    document.querySelectorAll('#presetList .preset-chip').forEach(function(c){
+      var r = Number(c.dataset.round), s = Number(c.dataset.rest);
+      c.classList.toggle('active', r===settings.roundSec && s===settings.restSec);
+    });
+  }
+
+  document.querySelectorAll('.step-btn').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      adjustSetting(btn.dataset.adj, Number(btn.dataset.delta));
+    });
+  });
+
+  // Tap a value to type it directly.
+  document.querySelectorAll('.val-editable').forEach(function(span){
+    var key = span.dataset.key;
+    function openEditor(){
+      if(STATE.phase!=='idle' && STATE.phase!=='done') return;
+      var input = document.createElement('input');
+      input.type = 'text';
+      input.inputMode = 'numeric';
+      input.className = 'val-edit-input';
+      input.value = span.textContent.replace('s','');
+      span.replaceWith(input);
+      input.focus();
+      input.select();
+      var done = false;
+      function finish(commit){
+        if(done) return;
+        done = true;
+        if(commit){
+          setSettingAbsolute(key, parseFieldInput(key, input.value));
+        }
+        input.replaceWith(span);
+        renderSettings();
+      }
+      input.addEventListener('keydown', function(e){
+        if(e.key==='Enter'){ e.preventDefault(); finish(true); }
+        else if(e.key==='Escape'){ e.preventDefault(); finish(false); }
+      });
+      input.addEventListener('blur', function(){ finish(true); });
+    }
+    span.addEventListener('click', openEditor);
+    span.addEventListener('keydown', function(e){
+      if(e.key==='Enter' || e.key===' '){ e.preventDefault(); openEditor(); }
+    });
+  });
+
+  // ---------- presets ----------
+  var BUILT_IN_PRESETS = [
+    {label:'3:00 / 1:00', round:180, rest:60},
+    {label:'2:00 / 1:00', round:120, rest:60},
+    {label:'1:00 / 0:30', round:60,  rest:30},
+    {label:'0:30 / 0:30', round:30,  rest:30},
+    {label:'0:40 / 0:20', round:40,  rest:20},
+    {label:'0:30 / 0:15', round:30,  rest:15}
+  ];
+
+  function applyBuiltInPreset(p){
+    if(STATE.phase!=='idle' && STATE.phase!=='done') return;
+    settings.roundSec = p.round;
+    settings.restSec = p.rest;
+    renderSettings();
+    saveSettings();
+    previewSetting('round');
+  }
+
+  function applyCustomPreset(p){
+    if(STATE.phase!=='idle' && STATE.phase!=='done') return;
+    settings.roundSec = p.round;
+    settings.restSec = p.rest;
+    settings.rounds = p.rounds;
+    settings.prepSec = p.prep;
+    settings.alertsOn = p.alertsOn;
+    settings.countUp = p.countUp;
+    renderSettings();
+    saveSettings();
+    previewSetting('round');
+  }
+
+  function renderPresets(){
+    var list = el.presetList;
+    list.innerHTML = '';
+    BUILT_IN_PRESETS.forEach(function(p){
+      var btn = document.createElement('button');
+      btn.type = 'button';
+      btn.className = 'chip preset-chip';
+      btn.dataset.round = p.round;
+      btn.dataset.rest = p.rest;
+      btn.textContent = p.label;
+      btn.addEventListener('click', function(){ applyBuiltInPreset(p); });
+      list.appendChild(btn);
+    });
+    customPresets.forEach(function(p, idx){
+      var btn = document.createElement('button');
+      btn.type = 'button';
+      btn.className = 'chip preset-chip';
+      btn.dataset.round = p.round;
+      btn.dataset.rest = p.rest;
+
+      var label = document.createElement('span');
+      label.textContent = p.name;
+      btn.appendChild(label);
+
+      var del = document.createElement('span');
+      del.className = 'preset-del';
+      del.textContent = '×';
+      del.setAttribute('aria-label', 'Delete preset');
+      del.addEventListener('click', function(e){
+        e.stopPropagation();
+        if(STATE.phase!=='idle' && STATE.phase!=='done') return;
+        customPresets.splice(idx,1);
+        savePresets();
+        renderPresets();
+      });
+      btn.appendChild(del);
+
+      btn.addEventListener('click', function(){ applyCustomPreset(p); });
+      list.appendChild(btn);
+    });
+    highlightPresetMatches();
+  }
+
+  el.savePresetBtn.addEventListener('click', function(){
+    if(STATE.phase!=='idle' && STATE.phase!=='done') return;
+    if(el.savePresetBtn.style.display==='none') return; // already editing
+
+    el.savePresetBtn.style.display = 'none';
+    var row = document.createElement('div');
+    row.className = 'preset-save-row';
+    var input = document.createElement('input');
+    input.type = 'text';
+    input.placeholder = 'Preset name';
+    input.maxLength = 24;
+    input.className = 'val-edit-input preset-name-input';
+    var saveBtn = document.createElement('button');
+    saveBtn.type = 'button';
+    saveBtn.className = 'chip';
+    saveBtn.textContent = 'Save';
+    var cancelBtn = document.createElement('button');
+    cancelBtn.type = 'button';
+    cancelBtn.className = 'chip';
+    cancelBtn.textContent = 'Cancel';
+    row.appendChild(input);
+    row.appendChild(saveBtn);
+    row.appendChild(cancelBtn);
+    el.savePresetBtn.insertAdjacentElement('afterend', row);
+    input.focus();
+
+    function cleanup(){
+      row.remove();
+      el.savePresetBtn.style.display = '';
+    }
+    function doSave(){
+      var name = input.value.trim();
+      if(!name){ cleanup(); return; }
+      customPresets.push({
+        name: name.slice(0,24),
+        round: settings.roundSec,
+        rest: settings.restSec,
+        rounds: settings.rounds,
+        prep: settings.prepSec,
+        alertsOn: settings.alertsOn,
+        countUp: settings.countUp
+      });
+      savePresets();
+      renderPresets();
+      cleanup();
+    }
+    saveBtn.addEventListener('click', doSave);
+    cancelBtn.addEventListener('click', cleanup);
+    input.addEventListener('keydown', function(e){
+      if(e.key==='Enter'){ e.preventDefault(); doSave(); }
+      else if(e.key==='Escape'){ e.preventDefault(); cleanup(); }
+    });
+  });
+
+  el.countUpSwitch.addEventListener('click', function(){
+    if(STATE.phase!=='idle' && STATE.phase!=='done') return;
+    settings.countUp = !settings.countUp;
+    renderSettings();
+    saveSettings();
+  });
+
+  el.alertsSwitch.addEventListener('click', function(){
+    settings.alertsOn = !settings.alertsOn;
+    renderSettings();
+    saveSettings();
+  });
+
+
+  el.settingsBtn.addEventListener('click', function(){
+    el.drawer.classList.toggle('open');
+  });
+
+  el.muteBtn.addEventListener('click', function(){
+    settings.muted = !settings.muted;
+    renderSettings();
+    saveSettings();
+  });
+
+  el.startBtn.addEventListener('click', startTimer);
+  el.resetBtn.addEventListener('click', resetTimer);
+
+  document.addEventListener('keydown', function(e){
+    if(e.code==='Space' && document.activeElement.tagName!=='BUTTON'){
+      e.preventDefault();
+      startTimer();
+    }
+  });
+
+  loadSettings();
+  loadPresets();
+})();
+</script>
+
+</body>
+</html>
